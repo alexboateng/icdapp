@@ -25,7 +25,7 @@ SECRET_KEY = '-hwyc%v-vxx8m6&r*9_w*za(c!wj6#l+tf)qd!*lcj4jm^9@yw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [ "157.230.189.70", "127.0.0.1", "localhost" ]
 
 
 # Application definition
@@ -75,16 +75,35 @@ WSGI_APPLICATION = 'icdrestapp.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'xelahaippa-2074.postgres.pythonanywhere-services.com',
+#         'NAME': 'restfulapiDB2',
+#         'USER': 'super',
+#         'PASSWORD': '4ppi4h44',
+#         # 'HOST': 'localhost',
+#         'PORT': 12074
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'xelahaippa-2074.postgres.pythonanywhere-services.com',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'restfulapiDB2',
-        'USER': 'super',
-        'PASSWORD': '4ppi4h44',
-        # 'HOST': 'localhost',
-        'PORT': 12074
+        'USER': 'xela',
+        'PASSWORD': 'password',
+        'HOST': 'localhost'
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'restfulapiDB2',
+#         'USER': 'postgres',
+#         'PASSWORD': 'password',
+#         'HOST': 'localhost'
+#     }
+# }
 
 
 # Password validation
