@@ -9,7 +9,7 @@ class  ICDVersion(models.Model):
 
 class  ICDCode(models.Model):
     categoryCode = models.TextField(blank=False, default='')
-    diagnosisCode = models.IntegerField()
+    diagnosisCode = models.TextField(blank=False, default='')
     fullCode = models.TextField(blank=False, default='')
     abbrDesc = models.TextField(blank=False, default='')
     fullDesc = models.TextField(blank=False, default='')

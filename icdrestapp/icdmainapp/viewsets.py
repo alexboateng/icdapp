@@ -98,7 +98,7 @@ def icdcode_list(request, av):
         snippets = ICDCode.objects.filter(appVersion=av).values().order_by('id') 
 
         page = request.GET.get('page')
-        paginator = Paginator(snippets, 2)
+        paginator = Paginator(snippets, 20)
 
         try:
             icdCodes = paginator.page(page)
