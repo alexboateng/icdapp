@@ -27,6 +27,8 @@ urlpatterns = [
     path('api/icdversion/<int:pk>', viewsets.icdverion_detail),
     path('api/icdcode/<int:av>', viewsets.icdcode_list),
     path('api/icdcode/<int:av>/<int:pk>', viewsets.icdcode_detail),
+
+    path('import_data', viewsets.import_data),
     # path('api/icdcode/list/<appversion>', viewsets.ApiICDListView.as_view()),
     # path('snippets/<int:pk>', views.snippet_detail),
 ]
