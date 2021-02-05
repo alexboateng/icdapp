@@ -90,10 +90,10 @@ WSGI_APPLICATION = 'icdrestapp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'restfulapiDB2',
-        'USER': 'postgres',
-        # 'NAME': 'restfulapidb2',
-        # 'USER': 'xela',
+        # 'NAME': 'restfulapiDB2',
+        # 'USER': 'postgres',
+        'NAME': 'restfulapidb2',
+        'USER': 'xela',
         'PASSWORD': 'password',
         'HOST': 'localhost'
     }
