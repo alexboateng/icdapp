@@ -5,7 +5,8 @@
 
 > An ICD API Endpoint Application (PYTHON)
 
-### ✨ [Demo](https://myapp-bklal.ondigitalocean.app/)
+### ✨ [Demo](http://157.230.189.70:8000/admin)
+### ✨ [API] http://157.230.189.70:8000
 
 <!-- TABLE OF CONTENTS -->
 
